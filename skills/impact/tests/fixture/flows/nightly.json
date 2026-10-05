@@ -1,0 +1,1 @@
+{"name": "Nightly export", "nodes": [{"name": "Read open orders", "type": "n8n-nodes-base.postgres", "parameters": {"query": "select * from open_orders"}}]}

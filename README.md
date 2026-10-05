@@ -11,6 +11,10 @@ to GitHub.
 skills/
   comment-sanitation/
     SKILL.md
+  impact/
+    SKILL.md
+    scripts/   # node, no dependencies
+    tests/     # node --test skills/impact/tests/impact.test.mjs
 ```
 
 ## Installing a skill locally
@@ -19,7 +23,7 @@ Symlink the skill directory into `~/.claude/skills/` so Claude Code picks it
 up while this repo stays the single source of truth:
 
 ```bash
-ln -sfn ~/dev/skills/skills/comment-sanitation ~/.claude/skills/comment-sanitation
+ln -sfn ~/dev/aimmendorf-skills/skills/<name> ~/.claude/skills/<name>
 ```
 
 Edit here, never in `~/.claude/skills/` (those are links).
