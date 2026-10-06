@@ -25,8 +25,11 @@ relayed.
 
 - `❌ Workflow validation failed` → fix every listed error before import.
   Errors name the node in brackets and, for versions, the valid values.
-- `Unknown parameter: "<name>"` (warning) → almost always a typo or a
-  parameter from another node version; fix it or say why it is intended.
+- `Unknown parameter: "<name>"` → almost always a typo or a parameter from
+  another node version; fix it or say why it is intended. Alone it is a
+  warning, but a misspelled parameter that other fields depend on (e.g.
+  `sendBody`) also surfaces as errors on those fields; fix the spelling and
+  revalidate before touching the dependent fields.
 - `Node is missing "id"` (warning) → normal for exported/sanitized
   workflows; ignore. Do not pass `--strict`, which turns these into errors.
 - `⚠️ Workflow is valid but has warnings` with only missing-id warnings →
