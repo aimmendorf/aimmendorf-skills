@@ -15,6 +15,8 @@ skills/
     SKILL.md
     scripts/   # node, no dependencies
     tests/     # node --test skills/impact/tests/impact.test.mjs
+  n8n-validate/
+    SKILL.md   # wraps n8n-as-code's validator (n8nac, pinned), telemetry off
 ```
 
 ## Installing a skill locally
